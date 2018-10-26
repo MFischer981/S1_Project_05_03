@@ -16,19 +16,21 @@
 
 /* Article Styles */
 /* Sets article width. */
-    article {
-        width: 384px;
-        float: left;
-    }
+article {
+    width: 384px;
+    float: left;
+}
 
 /* First Line and Drop Cap Styles */
 /* First line of text is larger, and the first letter is even larger. The first letter is floated to the left with a smaller line height and margins to the right and bottom. */
 article p:first-of-type::first-line {
     font-size: 1.25em;
+    font-variant: small-caps;
 }
 
 article p:first-of-type::first-letter {
     font-size: 4em;
+    font-family: serif;
     float: left;
     line-height: .8em;
     margin-right: 5px;
@@ -50,8 +52,10 @@ div#battleMap {
     position: relative;
 }
 
+
 div#battleMap img#mapImage {
     width: 100%;
+    display: block;
 }
 
 /* Interactive Map Styles */
@@ -98,6 +102,6 @@ div.mapInfo {
     display: none;
 }
 
-a.battleMarkers:hover + div.mapInfo {
+a.battleMarkers:hover+div.mapInfo {
     display: block;
 }
