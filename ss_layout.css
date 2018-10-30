@@ -15,7 +15,7 @@
 
 
 /* Article Styles */
-/* Sets article width. */
+/* Sets article width and floated to the left. */
 article {
     width: 384px;
     float: left;
@@ -38,14 +38,14 @@ article p:first-of-type::first-letter {
 }
 
 /* Aside Styles */
-/* Set aside width. */
+/* Set aside width and floated to the left. */
 aside {
     width: 768px;
     float: left;
 }
 
 /* Map Styles */
-/* Set map width, and map area width. */
+/* Set map width, and map area width. Made margin 20px on top and bottom and centered left and right with auto. Positioned relatively on the page. */
 div#battleMap {
     width: 688px;
     margin: 20px auto;
